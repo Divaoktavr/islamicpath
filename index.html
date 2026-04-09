@@ -2,93 +2,150 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Islam – Rahmatan Lil Alamin</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Sans+Arabic:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IslamicPath - Kisah dalam Al-Qur'an</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#beranda" class="logo">☪ <span>IslamicPath</span></a>
+      <div class="nav-menu">
+        <a href="#beranda">Beranda</a>
+        <a href="#biodata">Biodata</a>
+        <a href="#artikel">Artikel</a>
+        <a href="#nilai">Nilai</a>
+        <a href="#ayat">Ayat</a>
+      </div>
+      <button id="menuBtn">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#beranda">Beranda</a>
+      <a href="#biodata">Biodata</a>
+      <a href="#artikel">Artikel</a>
+      <a href="#nilai">Nilai</a>
+      <a href="#ayat">Ayat</a>
+    </div>
+  </nav>
 
-<nav class="navbar">
-  <div class="nav-container">
-    <div class="logo">☪ <span>IslamicPath</span></div>
+  <header class="hero" id="beranda">
+    <div class="moon"></div>
+    <p class="arabic-intro">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+    <h1>Islam dan <span>Kisah Penuh Hikmah</span></h1>
+    <p class="subtitle">Website ini memuat pengantar singkat tentang nilai Islam, ayat pilihan, biodata penulis, dan artikel baru tentang kisah Nabi Yusuf dalam Al-Qur'an.</p>
+    <div class="hero-buttons">
+      <button onclick="scrollToSection('artikel')">Baca Artikel</button>
+      <button class="outline" onclick="scrollToSection('biodata')">Lihat Biodata</button>
+    </div>
+  </header>
 
-    <ul class="nav-menu">
-      <li><a href="#beranda">Beranda</a></li>
-      <li><a href="#rukun">Rukun Islam</a></li>
-      <li><a href="#nilai">Nilai</a></li>
-      <li><a href="#ayat">Ayat</a></li>
-    </ul>
+  <section class="section reveal" id="biodata">
+    <div class="section-heading">
+      <p class="tag">Halaman depan</p>
+      <h2>Biodata Penulis</h2>
+      <p>Bagian ini diletakkan di halaman depan agar identitas penulis mudah dilihat saat penilaian.</p></div>
+    <div class="biodata-card">
+      <div>
+        <h3>Diva Oktavia</h3>
+        <p>Program Studi Teknik Informatika</p>
+      </div>
+      <div class="biodata-grid">
+        <div><span>NIM</span><strong>312310248</strong></div>
+        <div><span>Kelas</span><strong>TI.23.C4</strong></div>
+        <div><span>Mata Kuliah</span><strong>Pendidikan Agama 6 </strong></div>
+        <div><span>Proyek</span><strong>IslamicPath</strong></div>
+      </div>
+    </div>
+  </section>
 
-    <button id="menuBtn">☰</button>
-  </div>
+  <section class="section dark reveal" id="artikel">
+    <div class="section-heading">
+      <p class="tag">Artikel tambahan</p>
+      <h2>Kisah Nabi Yusuf dalam Al-Qur'an</h2>
+    </div>
 
-  <div id="mobileMenu" class="mobile-menu">
-    <a href="#beranda">Beranda</a>
-    <a href="#rukun">Rukun Islam</a>
-    <a href="#nilai">Nilai</a>
-    <a href="#ayat">Ayat</a>
-  </div>
-</nav>
+    <article class="article-card">
+      <div class="article-meta">
+        <span>Topik: Kisah dalam Al-Qur'an</span>
+        <span>Fokus: Surah Yusuf</span>
+      </div>
 
-<section id="beranda" class="hero">
-  <div class="moon"></div>
-  <p class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
-  <h1><span>Islam</span> Rahmatan Lil Alamin</h1>
-  <p class="subtitle">
-    Islam membawa rahmat, kedamaian, dan keadilan bagi seluruh alam.
-  </p>
+      <h3>Mengapa kisah ini penting</h3>
+      <p>
+        Kisah Nabi Yusuf adalah salah satu kisah yang paling utuh dalam Al-Qur'an. Berbeda dari kisah nabi lain yang tersebar di banyak surah,
+        kisah Yusuf disampaikan dalam satu rangkaian yang panjang di Surah Yusuf. Bentuk ini membuat pembaca lebih mudah mengikuti alur peristiwa,
+        mulai dari masa kecil, ujian berat, sampai akhir yang penuh pemulihan.
+      </p>
 
-  <div class="hero-buttons">
-    <button onclick="scrollToSection('rukun')">Pelajari Rukun Islam</button>
-    <button class="outline" onclick="scrollToSection('ayat')">Baca Ayat</button>
-  </div>
-</section>
+      <h3>Ringkasan kisah</h3>
+      <p>
+        Yusuf diceritakan sebagai anak yang mendapat mimpi penting sejak kecil. Mimpi itu memicu kecemburuan saudara-saudaranya. Ia lalu dibuang,
+        dipisahkan dari keluarganya, dan akhirnya sampai ke Mesir. Di sana Yusuf menghadapi fitnah dan sempat dipenjara. Namun keadaan itu tidak
+        menghentikan akhlaknya. Ia tetap jujur, sabar, dan mampu menafsirkan mimpi. Kemampuan, integritas, dan keteguhan itu membuatnya dipercaya
+        menangani urusan pangan pada masa krisis. Di akhir kisah, Yusuf bertemu lagi dengan keluarganya dan memilih memaafkan.
+      </p>
 
-<div class="divider"></div>
+      <h3>Pesan yang bisa diambil</h3>
+      <div class="grid-3 compact">
+        <div class="card">
+          <h4>Sabar saat keadaan tidak adil</h4>
+          <p>Yusuf tidak langsung keluar dari masalah. Kisah ini menunjukkan bahwa proses panjang tetap bisa berujung baik.</p>
+        </div>
+        <div class="card">
+          <h4>Jujur lebih kuat dari fitnah</h4>
+          <p>Nama baik Yusuf sempat jatuh, tetapi kejujuran dan konsistensinya akhirnya terlihat jelas.</p>
+        </div>
+        <div class="card">
+          <h4>Memaafkan memberi akhir yang damai</h4>
+          <p>Puncak kisah ini bukan balas dendam, tetapi pertemuan keluarga dan sikap memaafkan.</p>
+        </div>
+      </div>
 
-<section id="rukun" class="section reveal">
-  <h2>Lima Rukun Islam</h2>
-  <div class="grid-5">
-    <div class="card">☝️<h3>Syahadat</h3><p>Kesaksian iman sebagai dasar kehidupan.</p></div>
-    <div class="card">🙏<h3>Shalat</h3><p>Ibadah wajib lima waktu sebagai tiang agama.</p></div>
-    <div class="card">💝<h3>Zakat</h3><p>Menyucikan harta dan membantu sesama.</p></div>
-    <div class="card">🌙<h3>Puasa</h3><p>Melatih kesabaran dan pengendalian diri.</p></div>
-    <div class="card">🕋<h3>Haji</h3><p>Ibadah ke Baitullah bagi yang mampu.</p></div>
-  </div>
-</section>
+      <h3>Nilai yang relevan untuk kehidupan sekarang</h3>
+      <p>
+        Kisah Nabi Yusuf dekat dengan situasi modern. Banyak orang pernah mengalami iri hati, perlakuan tidak adil, fitnah, atau masa menunggu yang panjang.
+        Dari kisah ini, pembaca bisa belajar bahwa karakter tetap penting saat kondisi belum berpihak. Kepercayaan sering lahir dari rekam jejak,
+        bukan dari kata-kata saja.
+      </p>
 
-<div class="divider"></div>
+    </article>
+  </section>
 
-<section id="nilai" class="section dark reveal">
-  <h2>Nilai-Nilai Islam</h2>
-  <div class="grid-3">
-    <div class="card">🤝<h3>Ukhuwah</h3><p>Mempererat persaudaraan antar manusia.</p></div>
-    <div class="card">⚖️<h3>Keadilan</h3><p>Bersikap adil dalam setiap keputusan.</p></div>
-    <div class="card">📚<h3>Ilmu</h3><p>Menuntut ilmu sepanjang hayat.</p></div>
-    <div class="card">💚<h3>Kasih Sayang</h3><p>Menyebarkan rahmat bagi seluruh alam.</p></div>
-    <div class="card">🙏<h3>Kesabaran</h3><p>Tabah dalam menghadapi ujian.</p></div>
-    <div class="card">🌍<h3>Amanah</h3><p>Menjaga kepercayaan dengan tanggung jawab.</p></div>
-  </div>
-</section>
+  <section class="section reveal" id="nilai">
+    <div class="section-heading">
+      <p class="tag">Materi awal</p>
+      <h2>Nilai-Nilai Islam</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card"><h3>Ukhuwah</h3><p>Mempererat persaudaraan antar manusia.</p></div>
+      <div class="card"><h3>Keadilan</h3><p>Bersikap adil dalam setiap keputusan.</p></div>
+      <div class="card"><h3>Ilmu</h3><p>Menuntut ilmu sepanjang hayat.</p></div>
+      <div class="card"><h3>Kasih Sayang</h3><p>Menyebarkan rahmat bagi seluruh alam.</p></div>
+      <div class="card"><h3>Kesabaran</h3><p>Tabah dalam menghadapi ujian.</p></div>
+      <div class="card"><h3>Amanah</h3><p>Menjaga kepercayaan dengan tanggung jawab.</p></div>
+    </div>
+  </section>
 
-<div class="divider"></div>
+  <section class="section dark reveal" id="ayat">
+    <div class="section-heading">
+      <p class="tag">Ayat pilihan</p>
+      <h2>Pengingat Singkat</h2>
+    </div>
+    <div class="verse">
+      <p class="arabic">إِنَّ مَعَ الْعُسْرِ يُسْرًا</p>
+      <p class="translation">"Sesungguhnya bersama kesulitan ada kemudahan."</p>
+      <p class="reference">QS. Al-Insyirah: 6</p>
+    </div>
+  </section>
 
-<section id="ayat" class="section reveal">
-  <h2>Ayat Pilihan</h2>
-  <div class="verse">
-    <p class="arabic">إِنَّ مَعَ الْعُسْرِ يُسْرًا</p>
-    <p>"Sesungguhnya bersama kesulitan ada kemudahan"</p>
-    <small>QS. Al-Insyirah: 6</small>
-  </div>
-</section>
+  <footer>
+    <p>Dibuat oleh Diva Oktavia</p>
+    <p>NIM 312310248 | TI.23.C4</p>
+  </footer>
 
-<footer>
-  <p>Dibuat oleh <strong>Diva Oktavia</strong></p>
-  <p>NIM: 312310248 | TI.23.C4</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
